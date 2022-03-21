@@ -5,12 +5,10 @@
 </div>
 
 <div id="signup-link-container">
-    <a href="signup.php"><b>Sign Up</b></a>
+    <a href="play.php"><b>Time to Play</b></a>
 </div>
 
-<div id="signup-link-container">
-    <a href="login.php"><b>Login</b></a>
-</div>
+
 
 
 <?php include("footer.php");?>  

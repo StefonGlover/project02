@@ -1,0 +1,58 @@
+a {
+    color: yellow;
+}
+
+a:visited {
+    color: blue;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40pt;
+    color: yellow;
+}
+
+table {
+    margin: auto;
+    width: 1000px;
+    font-weight: bold;
+}
+
+td, th {
+    font-size: 20pt;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    color: yellow;
+    background-color: blue;
+}
+
+.questionBackground {
+    background-color: blue;
+}
+
+.questionDiv {
+    margin: 10px auto;
+    padding: 15px;
+    width: 685px;
+    height: auto;
+    text-align: center;
+    border: 5pt solid black;
+    background-color: white;
+}
+
+.textheight {
+    display:inline-block;
+    padding: 5px 0px;
+    line-height:100%;
+}
+
+.m {
+    align-items: flex-end;
+}

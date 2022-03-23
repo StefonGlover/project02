@@ -1,10 +1,9 @@
 <?php 
-function webBar() {
-
-}
-
-function questionDiv($str) {
-    echo "<div></div>";
-}
-
+function addScore($score) {
+    $_SESSION["score"] = $_SESSION["score"] + $score;
+ }
+ 
+ function subScore($score) {
+     $_SESSION["score"] = $_SESSION["score"] - $score;
+  }
 ?>

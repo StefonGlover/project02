@@ -17,9 +17,14 @@ h1 {
     font-size: 40pt;
     color: yellow;
 }
-
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+}
 table {
-    margin: auto;
+    margin-left: auto;
+    margin-right: 30px;
     width: 1000px;
     font-weight: bold;
 }
@@ -31,6 +36,9 @@ td, th {
     height: 100px;
     color: yellow;
     background-color: blue;
+}
+.tableDiv {
+    float: right;
 }
 
 .questionBackground {
@@ -53,6 +61,30 @@ td, th {
     line-height:100%;
 }
 
-.m {
-    align-items: flex-end;
+.leaderboardplayer{
+    margin: 10px auto;
+    padding: 10px;
+    width: 220px;
+    height: auto;
+    text-align: center;
+    border: 5pt solid blue;
+    background-color: white;
+}
+
+.goBackDiv {
+    margin: auto;
+    width: 150px;
+    background-color: white;
+    border: 3pt solid black;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: black;}
+    49%{    color: black;}
+    60%{    color: red;}
+    99%{    color: red;}
+    100%{   color: black;}
 }

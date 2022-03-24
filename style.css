@@ -1,0 +1,90 @@
+a {
+    color: yellow;
+}
+
+a:visited {
+    color: blue;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40pt;
+    color: yellow;
+}
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 1000px;
+    font-weight: bold;
+}
+
+td, th {
+    font-size: 20pt;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    color: yellow;
+    background-color: blue;
+}
+.tableDiv {
+    float: right;
+}
+
+.questionBackground {
+    background-color: blue;
+}
+
+.questionDiv {
+    margin: 10px auto;
+    padding: 15px;
+    width: 685px;
+    height: auto;
+    text-align: center;
+    border: 5pt solid black;
+    background-color: white;
+}
+
+.textheight {
+    display:inline-block;
+    padding: 5px 0px;
+    line-height:100%;
+}
+
+.leaderboardplayer{
+    margin: 10px auto;
+    padding: 10px;
+    width: 220px;
+    height: auto;
+    text-align: center;
+    border: 5pt solid blue;
+    background-color: white;
+}
+
+.goBackDiv {
+    margin: auto;
+    width: 150px;
+    background-color: white;
+    border: 3pt solid black;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: black;}
+    49%{    color: black;}
+    60%{    color: red;}
+    99%{    color: red;}
+    100%{   color: black;}
+}

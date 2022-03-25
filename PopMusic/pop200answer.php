@@ -1,6 +1,12 @@
+<?php 
+
+session_start();
+
+?>
+
 <html>
 <head>
-<link rel = "stylesheet" href = "style.css">
+<link rel = "stylesheet" href = "../style.css">
 </head>
 <body class = "questionBackground">
     <div class = "questionDiv">
@@ -10,24 +16,26 @@
             //There, you determine what is printed out
             //Then, you get their total points from the server, add/sub their total, and write their total back in the server
 
-            require __DIR__ . '/common.php';
-            $str = "answer";
-            $score = 100;
-            if($str == $_POST('answer')) {
+            include_once "../common.php";
+            $str = "shaggy";
+            $ans_str = str_replace(' ','',strtolower($_POST('answer')));
+            $score = 200;
+            if($str == $ans_str) {
                 addScore($score);
                 echo "<div class = 'questionDiv'>".
                 "<h2>That is Correct!</h2>".
-                "You gain 100 points".
+                "You gain 200 points".
                 "</div>";
             } else {
                 subScore($score);
                 echo "<div class = 'questionDiv'>".
-                "<h2>That is Incorrect!</h2>".
-                "You lose 100 points".
+                "<h2>That is Incorrect! What is Shaggy.</h2>".
+                "You lose 200 points".
                 "</div>";
             }
+            decrementQuestions();
             echo "<div class = 'goBackDiv'>".
-            "<h3><a href = 'jeopardyBoard.html' class = 'blinking'>Go Back to Board</h3>".
+            "<h3><a href = 'jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
             "</div>";
         ?>
     </div>

@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
     <title>JEOPARDY!</title>
+</head>
 <body>
 
 <nav>
@@ -20,7 +21,7 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="https://codd.cs.gsu.edu/~sglover6/Project02.pdf">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
     </ul>
 </nav>
 

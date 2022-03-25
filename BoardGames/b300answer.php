@@ -10,10 +10,10 @@
             //There, you determine what is printed out
             //Then, you get their total points from the server, add/sub their total, and write their total back in the server
 
-            require __DIR__ . '/common.php';
+            include_once "../common.php";
             $str = "mancala";
             $score = 300;
-            if($str == $_POST('answer')) {
+            if($str == strtolower($_POST["answer"])) {
                 addScore($score);
                 echo "<div class = 'questionDiv'>".
                 "<h2>That is Correct!</h2>".
@@ -27,7 +27,7 @@
                 "</div>";
             }
             echo "<div class = 'goBackDiv'>".
-            "<h3><a href = 'jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
+            "<h3><a href = '../jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
             "</div>";
         ?>
     </div>

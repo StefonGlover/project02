@@ -1,3 +1,9 @@
+<?php 
+
+session_start();
+
+?>
+
 <html> 
 <head>
     <link rel = "stylesheet" href = "style.css">
@@ -59,7 +65,7 @@
                 <td><a href = "PopularBooks/book400.php">400</a></td>
             </tr>
             <tr>
-                <td><a href = "BoardGames/b500.html">500</a></td>
+                <td><a href = "BoardGames/b500.php">500</a></td>
                 <td><a href = "Movies/m500.php">500</a></td>
                 <td><a href = "Pop Music/pop500.php">500</a></td>
                 <td><a href = "SodaBrands/s500.php">500</a></td>
@@ -69,5 +75,10 @@
     </div>
 
     /*show name and points of the player*/
+    <?php 
+        echo "<h1>{$_SESSION["username"]}</h1>";
+        echo "<h1>{$_SESSION["score"]}</h1>";
+    
+    ?>
 <body>
 </html>

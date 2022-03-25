@@ -8,6 +8,7 @@ if(strpos(file_get_contents('players.txt'), $_POST['username']) == false && strp
         header('Location: jeopardyBoard.php');
         
         $_SESSION["username"] = $_POST["username"];
+        $_SESSION["qNums"] = 25;
        
    }
 

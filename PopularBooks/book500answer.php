@@ -30,6 +30,7 @@
                 "You lose 500 points".
                 "</div>";
             }
+            decrementQuestions();
             echo "<div class = 'goBackDiv'>".
             "<h3><a href = '../jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
             "</div>";

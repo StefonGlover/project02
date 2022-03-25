@@ -1,8 +1,7 @@
 <?php 
     session_start();
-    $_SESSION["score"] = 0;
-  
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +13,6 @@
     <title>JEOPARDY!</title>
 </head>
 <body>
-
 <nav>
     <div class="logo">
         <p>Jeopardy!</p>
@@ -23,25 +21,15 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="https://codd.cs.gsu.edu/~sglover6/Project02.pdf">About</a></li>
         <li><a href="contact.php">Contact</a></li>
-        <li>
-            <?php
-
-                if(isset($_SESSION["username"]))
-                {
-                    echo "<a href=\"logout.php\">Logout</a>";
-                }
-                else
-                {
-                    echo "<a href=\"logout.php\" style=display:none>Logout</a>";
-                }
-            ?>
-
-        </li>
     </ul>
 </nav>
-
-<h1 id="welcome-header">
-    Welcome to JEOPARDY!
-</h1>
+<div style="color: black; padding: 10px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 100px;">
+<h1>Game over, <?php echo $_SESSION["username"]?>!</h1><br>
 
 
+   <h1>Final score <?php echo $_SESSION["score"]?><br><a href="index.php">Try again?</a><h1>
+
+
+</div>
+</body>
+</html>

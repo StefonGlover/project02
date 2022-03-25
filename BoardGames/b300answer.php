@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <html>
 <head>
 <link rel = "stylesheet" href = "../style.css">
@@ -26,6 +30,7 @@
                 "You lose 300 points".
                 "</div>";
             }
+            decrementQuestions();
             echo "<div class = 'goBackDiv'>".
             "<h3><a href = '../jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
             "</div>";

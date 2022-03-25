@@ -21,6 +21,7 @@
     </div>
     <ul>
         <li><a href="index.php">Home</a></li>
+        <li><a href="leaderboard-page.php">Leaderboard</a></li>
         <li><a href="https://codd.cs.gsu.edu/~sglover6/Project02.pdf">About</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li>

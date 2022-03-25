@@ -6,10 +6,13 @@ a:visited {
     color: blue;
 }
 
-body {
-    background-color: rgb(27, 27, 27);
+#boarder-body {
+    background-color: black;
 }
 
+#body-LB {
+    background-color: blue;
+}
 h1 {
     margin-bottom: 10px;
     text-align: center;
@@ -64,7 +67,7 @@ td, th {
 .leaderboardplayer{
     margin: 10px auto;
     padding: 10px;
-    width: 220px;
+    width: 240px;
     height: auto;
     text-align: center;
     border: 5pt solid blue;

@@ -6,6 +6,8 @@
 
     if($_SESSION["qNums"] == 0) {
         header('Location: game-over.php');
+        saveScore();
+        sortData();
         exit();
     }
 
@@ -18,21 +20,8 @@
 <head>
     <link rel = "stylesheet" href = "style.css">
 </head>
-<body>
+<body id="boarder-body">
     <div class = "tableDiv">
-        <div class = "leaderboardplayer">
-            <h3 class = "blinking">Top 10 Leaderboard:</h3>
-                fgdnkgndl - 4000pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts<br>
-                dsjdkfjsdkfj - 3420pts
-        </div>
         <div class = "leaderboardplayer">
             <?php 
                 echo "<h1>{$_SESSION["username"]}</h1>";
@@ -56,7 +45,7 @@
             <tr>
                 <td><a href = "BoardGames/b100.php" class = "fadeIn1">100</a></td>
                 <td><a href = "Movies/m100.php" class = "fadeIn2">100</a></td>
-                <td><a href = "Pop Music/pop100.php" class = "fadeIn3">100</a></td>
+                <td><a href = "PopMusic/pop100.php" class = "fadeIn3">100</a></td>
                 <td><a href = "SodaBrands/s100.php" class = "fadeIn4">100</a></td>
                 <td><a href = "PopularBooks/book100.php" class = "fadeIn5">100</a></td>
             </tr>
@@ -82,7 +71,7 @@
                 <td><a href = "PopularBooks/book400.php" class = "fadeIn5">400</a></td>
             </tr>
             <tr>
-                <td><a href = "BoardGames/b500.html" class = "fadeIn1">500</a></td>
+                <td><a href = "BoardGames/b500.php" class = "fadeIn1">500</a></td>
                 <td><a href = "Movies/m500.php" class = "fadeIn2">500</a></td>
                 <td><a href = "PopMusic/pop500.php" class = "fadeIn3">500</a></td>
                 <td><a href = "SodaBrands/s500.php" class = "fadeIn4">500</a></td>

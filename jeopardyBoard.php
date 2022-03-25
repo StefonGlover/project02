@@ -54,28 +54,28 @@
             <tr>
                 <td ><a href = "BoardGames/b200.php" class = "fadeIn1">200</a></td>
                 <td><a href = "Movies/m200.php" class = "fadeIn2">200</a></td>
-                <td><a href = "Pop Music/pop200.php" class = "fadeIn3">200</a></td>
+                <td><a href = "PopMusic/pop200.php" class = "fadeIn3">200</a></td>
                 <td><a href = "SodaBrands/s200.php" class = "fadeIn4">200</a></td>
                 <td><a href = "PopularBooks/book200.php" class = "fadeIn5">200</a></td>
             </tr>
             <tr>
                 <td><a href = "BoardGames/b300.php" class = "fadeIn1">300</a></td>
                 <td><a href = "Movies/m300.php" class = "fadeIn2">300</a></td>
-                <td><a href = "Pop Music/pop300.php" class = "fadeIn3">300</a></td>
+                <td><a href = "PopMusic/pop300.php" class = "fadeIn3">300</a></td>
                 <td><a href = "SodaBrands/s300.php" class = "fadeIn4">300</a></td>
                 <td><a href = "PopularBooks/book300.php" class = "fadeIn5">300</a></td>
             </tr>
             <tr>
                 <td><a href = "BoardGames/b400.php" class = "fadeIn1">400</a></td>
                 <td><a href = "Movies/m400.php" class = "fadeIn2">400</a></td>
-                <td><a href = "Pop Music/pop400.php" class = "fadeIn3">400</a></td>
+                <td><a href = "PopMusic/pop400.php" class = "fadeIn3">400</a></td>
                 <td><a href = "SodaBrands/s400.php" class = "fadeIn4">400</a></td>
                 <td><a href = "PopularBooks/book400.php" class = "fadeIn5">400</a></td>
             </tr>
             <tr>
                 <td><a href = "BoardGames/b500.html" class = "fadeIn1">500</a></td>
                 <td><a href = "Movies/m500.php" class = "fadeIn2">500</a></td>
-                <td><a href = "Pop Music/pop500.php" class = "fadeIn3">500</a></td>
+                <td><a href = "PopMusic/pop500.php" class = "fadeIn3">500</a></td>
                 <td><a href = "SodaBrands/s500.php" class = "fadeIn4">500</a></td>
                 <td><a href = "PopularBooks/book500.php" class = "fadeIn5">500</a></td>
             </tr>

@@ -2,9 +2,15 @@
 <?php 
     session_start();
 
+    include_once "common.php";
+
     if($_SESSION["qNums"] == 0) {
         header('Location: game-over.php');
         exit();
+    }
+
+    if(isset($_POST['quit'])) {
+        logoutPlayer();
     }
 ?>
 
@@ -32,6 +38,9 @@
                 echo "<h1>{$_SESSION["username"]}</h1>";
                 echo "<h1>{$_SESSION["score"]}</h1>";
                 echo "<h1> Number of questions left: {$_SESSION["qNums"]}</h1>";
+                echo "<form method=post>
+                          <input type=submit name=quit value=QUIT>
+                        </form>";
             ?>
         </div>
     </div>

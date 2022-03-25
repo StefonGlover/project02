@@ -17,20 +17,20 @@ session_start();
             //Then, you get their total points from the server, add/sub their total, and write their total back in the server
 
             include_once "../common.php";
-            $str = "pussinboots";
+            $str = "billiejean";
             $ans_str = str_replace(' ','',strtolower($_POST('answer')));
-            $score = 200;
+            $score = 300;
             if($str == $ans_str) {
                 addScore($score);
                 echo "<div class = 'questionDiv'>".
                 "<h2>That is Correct!</h2>".
-                "You gain 200 points".
+                "You gain 300 points".
                 "</div>";
             } else {
                 subScore($score);
                 echo "<div class = 'questionDiv'>".
-                "<h2>That is Incorrect! What is Puss in Boots.</h2>".
-                "You lose 200 points".
+                "<h2>That is Incorrect! What is Billie Jean.</h2>".
+                "You lose 300 points".
                 "</div>";
             }
             decrementQuestions();

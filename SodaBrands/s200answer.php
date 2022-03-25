@@ -1,5 +1,7 @@
 <?php 
-    session_start();
+
+session_start();
+
 ?>
 
 <html>
@@ -16,8 +18,9 @@
 
             include_once "../common.php";
             $str = "barq's";
+            $ans_str = str_replace(' ','',strtolower($_POST('answer')));
             $score = 200;
-            if($str == strtolower($_POST["answer"])) {
+            if($str == $ans_str) {
                 addScore($score);
                 echo "<div class = 'questionDiv'>".
                 "<h2>That is Correct!</h2>".
@@ -26,13 +29,13 @@
             } else {
                 subScore($score);
                 echo "<div class = 'questionDiv'>".
-                "<h2>That is Incorrect!</h2>".
+                "<h2>That is Incorrect! What is Barq's.</h2>".
                 "You lose 200 points".
                 "</div>";
             }
             decrementQuestions();
             echo "<div class = 'goBackDiv'>".
-            "<h3><a href = '../jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
+            "<h3><a href = 'jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
             "</div>";
         ?>
     </div>

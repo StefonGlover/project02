@@ -3,11 +3,11 @@
 <link rel = "stylesheet" href = "../style.css">
 </head>
 <body class = "questionBackground">
-    <h1>400</h1>
+    <h1>100</h1>
     <div class = "questionDiv">
-        <h2>This 1963 Rube Goldberg-like game allows players to ensnare their rodent opponents.</h2>
+        <h2>Katy Perry’s first big hit ‘I Kissed a Girl’ came out in this year.</h2>
 
-    <form action = "BoardGames/b400answer.php" method = "push">
+    <form action = "PopMusic/pop100answer.php" method = "push">
         What is? <input name="answer" type="text" size="32" maxlength="32">
         <button type="submit" width = "auto" height = "50px">Submit</button>
     </form>

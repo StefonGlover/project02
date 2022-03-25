@@ -17,9 +17,10 @@ session_start();
             //Then, you get their total points from the server, add/sub their total, and write their total back in the server
 
             include_once "../common.php";
-            $str = "the magician’s nephew";
+            $str = "themagician’snephew";
+            $ans_str = str_replace(' ','',strtolower($_POST('answer')));
             $score = 400;
-            if($str == strtolower($_POST["answer"])) {
+            if($str == $ans_str) {
                 addScore($score);
                 echo "<div class = 'questionDiv'>".
                 "<h2>That is Correct!</h2>".

@@ -7,7 +7,7 @@
     <div class = "questionDiv">
         <h2>St. Vladimir's is the name of the title boarding school of this 2014 film based on a book series</h2>
 
-    <form action = "Movies/m400answer.php" method = "post">
+    <form action = "m400answer.php" method = "post">
         What is? <input name="answer" type="text" size="32" maxlength="32">
         <button type="submit" width = "auto" height = "50px">Submit</button>
     </form>

@@ -32,6 +32,8 @@
                 echo "<h1>{$_SESSION["username"]}</h1>";
                 echo "<h1>{$_SESSION["score"]}</h1>";
                 echo "<h1> Number of questions left: {$_SESSION["qNums"]}</h1>";
+                echo "<h1><a></a></h1>";
+
             ?>
         </div>
     </div>

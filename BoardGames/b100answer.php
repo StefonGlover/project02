@@ -18,9 +18,8 @@ session_start();
 
             include_once "../common.php";            
             $str = "monopoly";
-            $ans_str = str_replace(' ','',strtolower($_POST('answer')));
             $score = 100;
-            if($str == $ans_str) {
+            if($str == strtolower($_POST["answer"])) {
                 addScore($score);
                 echo "<div class = 'questionDiv'>".
                 "<h2>That is Correct!</h2>".
@@ -35,7 +34,7 @@ session_start();
             }
             decrementQuestions();
             echo "<div class = 'goBackDiv'>".
-            "<h3><a href = 'jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
+            "<h3><a href = '../jeopardyBoard.php' class = 'blinking'>Go Back to Board</h3>".
             "</div>";
         ?>
     </div>
